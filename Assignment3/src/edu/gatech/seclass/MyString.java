@@ -100,7 +100,7 @@ public class MyString implements MyStringInterface {
         else{
             if(firstPosition >= 1 && firstPosition <= finalPosition) {
                 if(finalPosition > this.input.length()) {
-                    throw new IndexOutOfBoundsException("finalPosition is out of bounds");
+                    throw new MyIndexOutOfBoundsException("finalPosition is out of bounds");
                 }
             }
             else{

@@ -143,7 +143,7 @@ public class MyStringTest {
     // Description: It checks whether the method throws IndexOutOfBoundException when finalPosition is out of bound
     public void testConvertDigitsToNamesInSubstring4() {
         myString.setString("Java!1");
-        assertThrows(IndexOutOfBoundsException.class, () ->myString.convertDigitsToNamesInSubstring(3, 10));
+        assertThrows(MyIndexOutOfBoundsException.class, () ->myString.convertDigitsToNamesInSubstring(3, 10));
     }
 
     @Test
