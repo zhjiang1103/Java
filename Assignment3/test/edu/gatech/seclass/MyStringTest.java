@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Timeout.ThreadMode;
 
 import java.util.concurrent.TimeUnit;
 
+import static edu.gatech.seclass.MyStringInterface.easterEgg;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.fail;
@@ -67,10 +68,8 @@ public class MyStringTest {
     // Description: This test checks whether method setString set a value of current string
     public void testSetString1() {
         MyString string = new MyString();
-        String testString = "Test 999Value";
-
-        string.setString(testString);
-        assertEquals(testString, string.getString());
+        string.setString(easterEgg);
+        assertEquals(easterEgg, string.getString());
     }
 
     @Test
