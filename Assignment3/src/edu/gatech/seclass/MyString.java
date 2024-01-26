@@ -9,7 +9,7 @@ public class MyString implements MyStringInterface {
     }
 
     public void setString(String string) {
-        if (string.equals(easterEgg)) {
+        if (string.equals(MyStringInterface.easterEgg)) {
             throw new IllegalArgumentException("String cannot be equal to easterEgg.");
         }
 
