@@ -67,9 +67,8 @@ public class MyStringTest {
     @Test
     // Description: This test checks whether method setString set a value of current string
     public void testSetString1() {
-        MyString string = new MyString();
-        string.setString(easterEgg);
-        assertEquals(easterEgg, string.getString());
+        myString.setString(MyStringInterface.easterEgg);
+        assertEquals(MyStringInterface.easterEgg, myString.getString());
     }
 
     @Test
