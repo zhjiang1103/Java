@@ -9,19 +9,22 @@ public class MyString implements MyStringInterface {
     }
 
     public void setString(String string) {
-        if (string.equals(MyStringInterface.easterEgg)) {
-            throw new IllegalArgumentException("String cannot be equal to easterEgg.");
-        }
+        if (string != null) {
+            if (string.equals(MyStringInterface.easterEgg)) {
+                throw new IllegalArgumentException("String cannot be equal to easterEgg.");
+            }
 
-        if (string.isEmpty()) {
-            throw new IllegalArgumentException("String cannot be empty.");
-        }
 
-        // Check if string contains at least one letter or number
-        if (!string.matches(".*[a-zA-Z0-9].*")) {
-            throw new IllegalArgumentException("String must contain at least one letter or number.");
+            if (string.isEmpty()) {
+                throw new IllegalArgumentException("String cannot be empty.");
+            }
+
+            // Check if string contains at least one letter or number
+            if (!string.matches(".*[a-zA-Z0-9].*")) {
+                throw new IllegalArgumentException("String must contain at least one letter or number.");
+            }
+            this.input = string; //set the value of the current string
         }
-        this.input=string;              //set the value of the current string
 
     }
 
