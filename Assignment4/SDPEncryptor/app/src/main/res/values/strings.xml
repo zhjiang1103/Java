@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SDPEncryptor</string>
+    <string name="encrypt_entry_text">Encrypt Entry Text</string>
+    <string name="enter_param_1">Enter Param 1</string>
+    <string name="arg_input_2">Arg Input 2</string>
+    <string name="enter_param_2">Enter Param 2</string>
+    <string name="text_encrypted">Text Encrypted</string>
+    <string name="arg_input_1">Arg Input 1</string>
+    <string name="entry_text">Entry Text</string>
+    <string name="sdp_encryptor_spring_2024">SDP Encryptor Spring 2024</string>
+</resources>
